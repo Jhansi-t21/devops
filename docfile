@@ -1,0 +1,18 @@
+docker:
+
+# Use official OpenJDK image from Eclipse #Temurin
+
+
+FROM eclipse-temurin:17
+
+# Set working directory inside container
+WORKDIR /app
+
+# Copy Java file into container
+COPY . .
+
+# Compile the Java program
+RUN javac App.java
+
+# Run the program
+CMD ["java", "App"]
