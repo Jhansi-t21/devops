@@ -1,6 +1,8 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
+import org.junit.jupyter.api*;
+import static org.junit.jupyter.api.Assertions.*;
 public class CalculatorTest {
 
     Calculator c = new Calculator();
